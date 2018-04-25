@@ -20,7 +20,6 @@
 		61135CBC208B694400562F6F /* UploadData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61135CBB208B694400562F6F /* UploadData.swift */; };
 		61135CBE208B6B2F00562F6F /* GenericEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61135CBD208B6B2F00562F6F /* GenericEnums.swift */; };
 		61135CC0208B6D4F00562F6F /* CallbackResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61135CBF208B6D4F00562F6F /* CallbackResult.swift */; };
-		61135CC2208BB0A300562F6F /* AthleteStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61135CC1208BB0A300562F6F /* AthleteStats.swift */; };
 		61135CC4208C336700562F6F /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61135CC3208C336700562F6F /* Activity.swift */; };
 		61135CC6208C353400562F6F /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61135CC5208C353400562F6F /* JSON.swift */; };
 		61135CC9208C3C9C00562F6F /* ActivityDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61135CC8208C3C9C00562F6F /* ActivityDetailTableViewCell.xib */; };
@@ -78,7 +77,6 @@
 		61135CBB208B694400562F6F /* UploadData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadData.swift; sourceTree = "<group>"; };
 		61135CBD208B6B2F00562F6F /* GenericEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericEnums.swift; sourceTree = "<group>"; };
 		61135CBF208B6D4F00562F6F /* CallbackResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallbackResult.swift; sourceTree = "<group>"; };
-		61135CC1208BB0A300562F6F /* AthleteStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthleteStats.swift; sourceTree = "<group>"; };
 		61135CC3208C336700562F6F /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		61135CC5208C353400562F6F /* JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
 		61135CC8208C3C9C00562F6F /* ActivityDetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActivityDetailTableViewCell.xib; sourceTree = "<group>"; };
@@ -264,7 +262,6 @@
 				61B74E1F208982970040E018 /* Athlete.swift */,
 				61135CB5208B655C00562F6F /* AccessControl.swift */,
 				61135CBB208B694400562F6F /* UploadData.swift */,
-				61135CC1208BB0A300562F6F /* AthleteStats.swift */,
 				61135CC3208C336700562F6F /* Activity.swift */,
 			);
 			path = models;
@@ -487,7 +484,6 @@
 				61135CA6208B60F000562F6F /* ViewController.swift in Sources */,
 				61B74E1E208981EB0040E018 /* OAuthToken.swift in Sources */,
 				61135CCC208C3CF800562F6F /* ActivityDetailTableViewCell.swift in Sources */,
-				61135CC2208BB0A300562F6F /* AthleteStats.swift in Sources */,
 				61B74E1C208981730040E018 /* TokenDelegate.swift in Sources */,
 				61135CAA208B612B00562F6F /* Storyboard.swift in Sources */,
 				61B74E17208971440040E018 /* Strava.swift in Sources */,

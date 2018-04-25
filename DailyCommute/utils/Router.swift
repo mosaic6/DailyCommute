@@ -18,10 +18,7 @@ public enum Router {
     case activities(id: Id, params: Params)
     case athlete
     case athleteActivites(params: Params)
-    case athletes(id: Id, params: Params)
-    case athleteStats(id: Id, params: Params)
     case createActivity(params: Params)
-    case routes(id: Id)
     case token(code: String)
     
 }
@@ -72,16 +69,10 @@ extension Router {
             return ("/activities/\(id)", params, .get)
         case .athlete:
             return ("/athlete", nil, .get)
-        case .athletes(let id, let params):
-            return ("/athletes/\(id)", params, .get)
         case .athleteActivites(let params):
             return ("/athlete/activities", params, .get)
-        case .athleteStats(let id, let params):
-            return ("/athletes/\(id)/stats", params, .get)
         case .createActivity(let params):
-            return ("/activities", params, .post)
-        case .routes(let id):
-            return ("/routes/\(id)", nil, .get)
+            return ("/activities", params, .post)        
         case .token(let code):
             return ("/token", StravaService.shared.tokenParams(code), .post)
         }

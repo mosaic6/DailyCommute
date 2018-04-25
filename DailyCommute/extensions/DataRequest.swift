@@ -36,9 +36,9 @@ extension DataRequest {
         return responseStravaArray(queue, keyPath: nil, completionHandler: completionHandler)
     }
     
-//    @discardableResult func responseStravaArray<T: Strava>(_ queue: DispatchQueue?, keyPath: String?, completionHandler: @escaping (DataResponse<[T]>) -> Void) -> Self {
-//        return response(queue: queue, responseSerializer: DataRequest.StravaArraySerializer(keyPath), completionHandler: completionHandler)
-//    }
+    @discardableResult func responseStravaArray<T: Strava>(_ queue: DispatchQueue?, keyPath: String?, completionHandler: @escaping (DataResponse<[T]>) -> Void) -> Self {
+        return response(queue: queue, responseSerializer: DataRequest.StravaArraySerializer(keyPath), completionHandler: completionHandler)
+    }
 }
 
 //MARK: Serializers
