@@ -1,0 +1,6 @@
+framework module Pods_DailyCommute {
+  umbrella header "Pods-DailyCommute-umbrella.h"
+
+  export *
+  module * { export * }
+}
