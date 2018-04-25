@@ -18,20 +18,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RzD-IR-UjS">
-                                <rect key="frame" x="100" y="386" width="175" height="40"/>
-                                <color key="backgroundColor" red="0.97260993719100952" green="0.35816577971896985" blue="0.066113925117822325" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="Kg3-23-XgI"/>
-                                    <constraint firstAttribute="width" constant="175" id="bDq-HZ-YSM"/>
-                                </constraints>
-                                <state key="normal" title="Connect with STRAVA">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="connectWithStravaButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9KG-R8-qgM"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daily Commute 🚴‍♀️" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6t4-ma-EwH">
                                 <rect key="frame" x="71" y="131" width="232" height="35"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="25"/>
@@ -56,20 +42,35 @@
                                 <color key="textColor" red="0.32620125054235483" green="0.34402760152284262" blue="0.33885285589093522" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RzD-IR-UjS">
+                                <rect key="frame" x="101" y="428" width="175" height="40"/>
+                                <color key="backgroundColor" red="0.97260993719100952" green="0.35816577971896985" blue="0.066113925117822325" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Kg3-23-XgI"/>
+                                    <constraint firstAttribute="width" constant="175" id="bDq-HZ-YSM"/>
+                                </constraints>
+                                <state key="normal" title="Connect with STRAVA">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="connectWithStravaButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9KG-R8-qgM"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="rXD-b7-E6y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0IP-aD-J5m"/>
                             <constraint firstItem="mKi-qd-7bt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2pl-o2-Rfj"/>
                             <constraint firstItem="97w-Wx-RD4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3l8-SY-g9K"/>
-                            <constraint firstItem="RzD-IR-UjS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="8eN-61-HRs"/>
+                            <constraint firstItem="RzD-IR-UjS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="42" id="8eN-61-HRs"/>
                             <constraint firstItem="97w-Wx-RD4" firstAttribute="top" secondItem="mKi-qd-7bt" secondAttribute="bottom" constant="23.5" id="AYy-Ra-N7Y"/>
+                            <constraint firstItem="RzD-IR-UjS" firstAttribute="top" relation="greaterThanOrEqual" secondItem="rXD-b7-E6y" secondAttribute="bottom" constant="10" id="ENA-iU-uXX"/>
                             <constraint firstItem="6t4-ma-EwH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="87" id="HWH-fF-jlI"/>
                             <constraint firstItem="mKi-qd-7bt" firstAttribute="top" secondItem="6t4-ma-EwH" secondAttribute="bottom" constant="17" id="QFu-ah-hna"/>
                             <constraint firstItem="6t4-ma-EwH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nYg-hH-bQ9"/>
                             <constraint firstItem="rXD-b7-E6y" firstAttribute="top" secondItem="97w-Wx-RD4" secondAttribute="bottom" constant="19" id="oEE-Fh-FMQ"/>
                             <constraint firstItem="mKi-qd-7bt" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="woT-9J-5Hi"/>
-                            <constraint firstItem="RzD-IR-UjS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yoj-FR-lLN"/>
+                            <constraint firstItem="RzD-IR-UjS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="1" id="yoj-FR-lLN"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -106,9 +107,8 @@
                                             <action selector="trackButtonTapped:" destination="qXX-uA-7U7" eventType="touchUpInside" id="Qax-4K-bNS"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Track" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5am-XL-fG2">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Track" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5am-XL-fG2">
                                         <rect key="frame" x="173" y="38" width="28" height="17"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -117,7 +117,9 @@
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="94" id="64b-Nd-Tw1"/>
+                                    <constraint firstItem="5am-XL-fG2" firstAttribute="centerX" secondItem="EkQ-Ms-n3E" secondAttribute="centerX" id="7ya-4E-dmC"/>
                                     <constraint firstItem="fte-nZ-92T" firstAttribute="centerX" secondItem="EkQ-Ms-n3E" secondAttribute="centerX" id="Kkc-cW-KAI"/>
+                                    <constraint firstItem="5am-XL-fG2" firstAttribute="top" secondItem="fte-nZ-92T" secondAttribute="bottom" constant="-12" id="RC0-X0-QaA"/>
                                     <constraint firstItem="fte-nZ-92T" firstAttribute="top" secondItem="EkQ-Ms-n3E" secondAttribute="top" id="jMO-9O-Gu8"/>
                                 </constraints>
                             </view>
